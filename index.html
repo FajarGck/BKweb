@@ -1,215 +1,369 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bimbingan Konseling (BK) SMKN 1 SUSUKAN</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"">
+    <title>Belajar Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="./asset/bg.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-    <body>
-        <!-- banner -->
-  <header style="background-position: center; background-size: cover; background-repeat: no-repeat;" class="jumbotron jumbotron-fluid text-center">
-    <div style="border: 1px solid;" class="container">
-        <h3 class="display-4 fw-bold pt-5 mb-0">KAMU TIDAK SENDIRI</h3>
-        <h3 class="display-4 fw-bold">ADA KAMI DISINI</h3>
-        <h3 class="display-4 fw-bold m-0">BK PEDULI SISWA</h3>
-        <p class="lead">Bimbingan Konseling SMK</p>
-<br>
-<br>
-<br>
-        <a href="#contact" class="btn btn-primary btn-lg">Hubungi Kami</a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </div>
-  </header>
-
-  <!-- //tujuan -->
-  <section style="border: 1px solid;" id="tujuan" class="py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div style="border: 1px solid;" class="col-6">
-          <div style="border-radius: 10%;" class="card mb-4 shadow-lg ">
-            <div class="card-body">
-              <h5 class="card-title">Harapan</h5>
-              <ul>
-                <li>sholat</li>
-                <li>ngaji</li>
-                <li>ngrokok</li>
-                <li>nyobain</li>
-              </ul>
-            </div>
-          </div>
+<body>
+    <nav id="nav" class="bg-white fixed :bg-gray-900 w-full z-20 top-0 left-0 border-b border-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap">BKWEB</span>
+        </a>
+        <div class="flex md:order-2">
+            <button id="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+              <svg class="w-5 h-5" >
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
         </div>
-        <div style="border: 1px solid;" class="col-6">
-          <div style="border-radius: 10%;" class="card mb-4 shadow-lg ">
-            <div class="card-body">
-              <h5 class="card-title">Visi & Misi</h5>
-              <ul>
-                <li>mental healt issue</li>
-                <li>solve problem</li>
-              </ul>
-            </div>
-          </div>
+        <div id="nav-list" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" >
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 xl:text-xl md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white md::bg-gray-900">
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md::text-blue-500" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="block py-2 pl-3 pr-4 text-gray-900 rounded xl:text-xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-blue-500  md::hover:bg-transparent">About</a>
+            </li>
+            <li>
+              <a href="#program" class="block py-2 pl-3 pr-4 text-gray-900 rounded xl:text-xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-blue-500  md::hover:bg-transparent">Program</a>
+            </li>
+            <li>
+                <a href="#pembimbing" class="block py-2 pl-3 pr-4 text-gray-900 rounded xl:text-xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-blue-500  md::hover:bg-transparent">Pembimbing</a>
+            </li>
+            <li>
+              <a href="#faqs" class="block py-2 pl-3 pr-4 text-gray-900 rounded xl:text-xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-blue-500 md::hover:bg-transparent">FaQ's</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </div>
-  </section>
+        </div>
+    </nav>
 
-  <!-- guru -->
-  <section id="guru bg-light">
-    <div class="guru">
-      <div class="row">
-          <div class="col-6 ">
-              <div class="card shadow-lg">
-                  <div class="card-body">
-                          <div class="card-img d-flex justify-content-center">
-                              <img class="img" src="https://via.placeholder.com/200" alt="Profile Picture" class="rounded-circle" style="width: 200px; height: 200px;">
-                          </div>
-                          <div class="card-title text-center mt-2 fw-bold">Bu Lintang</div>                    
-                  </div>
-              </div>
-          </div>
-          <div class="col-6 align-self-center">
-              <div class="card shadow-lg">
-                  <div class="card-body">
-                    <h5 class="card-title">Apa itu konseling?</h5>
-                    <p class="card-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga expedita mollitia tempore doloribus ducimus,"</p>
-                  </div>
+    <!-- hero -->
+    <section id="hero" class="py-20 pt-24 h-full xl:py-36 bg-[#f9fafa] shadow-sm">
+        <div class="w-ful h-full flex flex-col justify-evenly items-center lg:flex-row ">
+            <div class="grid w-full text-center max-w-2xl px-4 py-2 lg:gap-0 xl:gap-0">
+                    <h1 class="text-3xl pb-3 font-bold tracking-wide text-slate-900 md:text-4xl xl:text-5xl md:max-w-screen-xl">Empowering Minds, Nurturing Hearts: Unlocking the Potential Within Every Student</h1>
+                    <p class="text-base md:text-xl pb-4 text-slate-700 font-medium ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel, magni distinctio unde neque sapiente. Possimus consequatur obcaecati a excepturi!</p>
+                    <div class="flex flex-col space-y-2 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                        <a href="" class="inline-flex items-center justify-center px-5 py-2 mr-3 text-slate-50 text-base font-semibold text-center rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-sky-600">
+                            Contact Us!
+                        </a>
+                        <a href="#" class="inline-flex items-center justify-center px-5 py-2 mr-3 text-slate-900 border border-slate-900 text-base font-semibold text-center rounded-lg bg-transparent hover:bg-slate-900 hover:text-slate-50 focus:ring-4 focus:ring-sky-600">
+                            Learn more
+                            <div class="flex font-extrabold">→</div>
+                        </a>
+                    </div>    
+            </div>
+            <div class="w-full py-6">
+                <img src="./asset/bg.jpg" alt="bg" class="w-screen lg:max-w-2xl h-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- <hr class="pt-14 border-t-4 w-72 lg:max-w-6xl mx-auto"> -->
+
+     <!-- about -->
+    <section id="about" class="py-10 scroll-p-12 container grid grid-cols-1 gap-6 mx-auto xl:grid-cols-2">
+
+        <div class="grid grid-cols-1 gap-6 lg:mb-0 lg:py-0 h-fit px-4">
+            <div class="mb-5">
+                <h1 class="text-2xl font-bold text-slate-900 py-3 xl:text-3xl">Kenapa Bimbingan Konseling itu penting?</h1>
+                <p class="text-sm font-medium tracking-wide text-slate-700 xl:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi error neque ut consequuntur voluptatum Lorem ipsum.</p>
+            </div>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                <div class="max-w-md flex border items-start space-x-2 rounded-[5%] shadow-lg">
+                    <svg class="w-6 h-6 m-2 border-black mb-3 flex flex-shrink-0  text-gray-500 :text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"/>
+                    </svg>
+                    <div class="mb-2">
+                        <h1 class="text-lg font-semibold mb-2 tracking-normal text-slate-900 ">Mental Health Issues</h1>
+                        <p class="text-sm font-medium tracking-wider text-slate-700 xl:text-xls">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi error neque ut consequuntur voluptatum tempore veniam sunt natus exercitationem omnis?</p>
+                    </div>
                 </div>
-          </div>
-      </div>
-    </div>
-</section>
+                <div class="max-w-md flex border items-start space-x-2 rounded-[5%] shadow-lg">
+                    <svg class="w-6 h-6 m-2 border-black mb-3 flex flex-shrink-0  text-gray-500 :text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"/>
+                    </svg>
+                    <div class="mb-2">
+                        <h1 class="text-lg font-semibold mb-2 tracking-normal text-slate-900 ">Carrier Planning</h1>
+                        <p class="text-sm font-medium tracking-wider text-slate-700 xl:text-xls">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi error neque ut consequuntur voluptatum tempore veniam sunt natus exercitationem omnis?</p>
+                    </div>
+                </div>
+                <div class="max-w-md flex border items-start space-x-2 rounded-[5%] shadow-lg">
+                    <svg class="w-6 h-6 m-2 border-black mb-3 flex flex-shrink-0  text-gray-500 :text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"/>
+                    </svg>
+                    <div class="mb-2">
+                        <h1 class="text-lg font-semibold mb-2 tracking-normal text-slate-900 ">Self Awarness</h1>
+                        <p class="text-sm font-medium tracking-wider text-slate-700 xl:text-xls">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi error neque ut consequuntur voluptatum tempore veniam sunt natus exercitationem omnis?</p>
+                    </div>
+                </div>
+                <div class="max-w-md flex border items-start space-x-2 rounded-[5%] shadow-lg">
+                    <svg class="w-6 h-6 m-2 border-black mb-3 flex flex-shrink-0  text-gray-500 :text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"/>
+                    </svg>
+                    <div class="mb-2">
+                        <h1 class="text-lg font-semibold mb-2 tracking-normal text-slate-900 ">Explore you're Passion</h1>
+                        <p class="text-sm font-medium tracking-wider text-slate-700 xl:text-xls">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi error neque ut consequuntur voluptatum tempore veniam sunt natus exercitationem omnis?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center max-h-full">
+            <img src="./asset/about-illustration.jpg" class="h-full shadow-xl rounded-br-[25%] w-full " alt="">
+        </div>
+    </section>
 
-<!-- //services -->
-  <section style="border: 1px solid;" class="py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div style="border: 1px solid;" class="col-6">
-          <div style="border-radius: 10%;" class="card mb-4 shadow-lg ">
-            <div class="card-body">
-              <h5 class="card-title">Konseling Individual</h5>
-              <p class="card-text">Dapatkan konseling pribadi yang sesuai dengan kebutuhan Anda.</p>
-            </div>
-          </div>
+    <!-- quotes -->
+    <section class="bg-white py-10 :bg-gray-900">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+            <figure class="max-w-screen-md mx-auto">
+                <svg class="h-12 mx-auto mb-3 text-gray-400 :text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                </svg> 
+                <blockquote>
+                    <p class="text-2xl font-medium text-gray-900 ">"Orang dengan mental health issue itu butuh didengar bos, bukan diceramaih atau dibanding-bandingkan"</p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center mt-6">
+                    <img class="w-10 h-10 rounded-full mr-2" src="./asset/quote-pp.jpg" alt="profile picture">
+                    <div class="flex items-center divide-x-2 divide-gray-500 :divide-gray-700">
+                        <div class="pr-3 font-medium text-gray-900 ">Dr. Tirta</div>
+                        <div class="pl-3 text-sm font-light text-gray-500 :text-gray-400">Influencer</div>
+                    </div>
+                </figcaption>
+            </figure>
         </div>
-        <div style="border: 1px solid;" class="col-6">
-          <div style="border-radius: 10%;" class="card mb-4 shadow-lg ">
-            <div class="card-body">
-              <h5 class="card-title">Bimbingan Karir</h5>
-              <p class="card-text">Temukan arah karir yang tepat dan persiapkan masa depan Anda.</p>
-            </div>
-          </div>
-        </div>
-        <div style="border: 1px solid;" class="col-6 offset-3 align-self-center">
-          <div style="border-radius: 10%;" class="card mb-4 shadow-lg ">
-            <div class="card-body">
-              <h5 class="card-title">Konseling Kelompok</h5>
-              <p class="card-text">Bergabung dengan kelompok diskusi dan dapatkan dukungan dari sesama.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
+    </section>
 
-  
-
-<!-- form -->
-
-<section id="form" class="py-5 bg-light">
-    <div class="container bg-light shadow-lg">
-      <h2 class="text-center mb-5">Kirim Keluhan Kamu😙😙</h2>
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <form>
-            <div class="form-group">
-              <label for="name">Nama</label>
-              <input type="text" class="form-control" id="name" required>
+    <!-- program -->
+    <section id="program" class="flex flex-col py-10">
+        <span class="font-bold text-2xl text-slate-900 text-center py-4 xl:text-4xl">Layanan Program Kami</span>
+        <div class="container flex flex-row flex-wrap gap-2 justify-center mx-auto xl:gap-0 ">
+            <div class="w-auto m-2 shadow-lg lg:max-w-md max-w-sm p-4 bg-white border border-gray-200 rounded-lg">
+                <a href="#">
+                    <h5 class="mb-2 text-lg xl:text-2xl
+                     font-bold tracking-tight text-gray-900">Program Konseling Individu</h5>
+                </a>
+                <p class="mb-3 text-sm xl:text-xl font-normal text-gray-700 :text-gray-400">Sesi konseling empat mata dengan siswa untuk membahas masalah pribadi, akademik, atau sosial mereka</p>
+                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white lg:text-lg  bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 :bg-blue-600 :hover:bg-blue-700 :focus:ring-blue-800">
+                    Ikut Program
+                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
             </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" required>
+            <div class="w-auto m-2 shadow-lg lg:max-w-md max-w-sm p-4 bg-white border border-gray-200 rounded-lg">
+                <a href="#">
+                    <h5 class="mb-2 text-lg xl:text-2xl
+                     font-bold tracking-tight text-gray-900 ">Manajemen Stress</h5>
+                </a>
+                <p class="mb-3 text-sm xl:text-xl font-normal text-gray-700 :text-gray-400">Membantu siswa untuk lebih mengenal cara menanggapi stress akibat masalah akademik, sosial, ataupun relationship</p>
+                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white lg:text-lg  bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 :bg-blue-600 :hover:bg-blue-700 :focus:ring-blue-800">
+                    Ikut Program
+                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
             </div>
-            <div class="form-group">
-              <label for="message">Pesan</label>
-              <textarea class="form-control" id="message" rows="5" required></textarea>
+            <div class="w-auto m-2 shadow-lg lg:max-w-md max-w-sm p-4 bg-white border border-gray-200 rounded-lg">
+                <a href="#">
+                    <h5 class="mb-2 text-lg xl:text-2xl
+                     font-bold tracking-tight text-gray-900 ">Bimbingan Karier</h5>
+                </a>
+                <p class="mb-3 text-sm xl:text-xl font-normal text-gray-700 :text-gray-400">Membimbing siswa untuk merenanakan karier mereka dengan baik serta lebih mengenali potensi dari masing-masing siswa</p>
+                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white lg:text-lg  bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 :bg-blue-600 :hover:bg-blue-700 :focus:ring-blue-800">
+                    Ikut Program
+                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Kirim</button>
-          </form>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- contact -->
-  <section id="contact">
-    <div class="container pt-5">
-      <h2 class="text-start mb-3 pb-3 border-bottom">CONTACT</h2>
-      <div class="row equal-height">
-        <div  class="col-md-3 mb-3 h-auto text-center">
-          <div class="card h-100 shadow-lg bg-white"  data-aos="fade-right-md"    >
-            <div class="card-body h-100">
-              <a href="#">
-                <i class="fa-solid fa-location-dot fa-6x text-info"></i>
-              </a>
-              <h3 class="card-title py-3">location</h3>
-              <h6 class="card-text">Kantor Guru gedung selatan</h6>
-            </div>
-          </div>
-        </div>
-        <div  class="col-md-3 mb-3 h-auto text-center">
-          <div class="card h-100 shadow-lg bg-white"  data-aos="fade-down"  >
-            <div class="card-body h-100">
-              <a href="#">
-                <i class="fa-solid fa-phone fa-6x text-info"></i>
-              </a>
-              <h3 class="card-title py-3">Phone</h3>
-              <h6 class="card-text">0912xxxxxx8x8xxx</h6>
-            </div>
-          </div>
-        </div>
-        <div  class="col-md-3 mb-3 h-auto text-center">
-          <div class="card h-100 shadow-lg bg-white"  data-aos="fade-down" >
-            <div class="card-body h-100">
-              <a href="https://web.whatsapp.com/" target="_blank">
-                <i class="fa-brands fa-square-whatsapp fa-6x text-info"></i>
-              </a>
-              <h3 class="card-title py-3">Whats apps</h3>
-              <h6 class="card-text">08xxxx89898</h6>
-            </div>
-          </div>
-        </div>
-        <div  class="col-md-3 mb-3 h-auto text-center">
-          <div class="card h-100 shadow-lg bg-white"  data-aos="fade-down" >
-            <div class="card-body h-100">
-              <a href="#">
-                <i class="fa-solid fa-envelope fa-6x text-info"></i>
-              </a>
-              <h3 class="card-title py-3">E-mail</h3>
-                <h6 class="card-text">smkn1susukan.sch.id</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <hr class="py-8 mt-4 border-t-4 max-w-4xl mx-auto">
 
-  <!-- fooetr -->
-  <footer class="bg-dark text-white py-3 text-center">
-    <div class="container">
-      <p>&copy; 2023 Bimbingan Konseling SMK. All rights reserved.</p>
-    </div>
-  </footer>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Pembimbing -->
+    <section id="pembimbing" class=" py-10">
+        <span>
+            <h1 class="text-2xl font-bold text-slate-900 text-center xl:text-4xl">Guru Pembimbing Kami</h1>
+            <p class="font-medium text-slate-800 text-center mb-4 xl:text-xl xl:mb-8">Konsisten, Presistent, Fokus</p>
+        </span>
+        <div class=" mx-auto container flex flex-col flex-wrap items-center gap-4 sm:flex-row sm:justify-evenly sm:gap-6">
+            <div class="flex flex-col w-72 items-center rounded-2xl shadow-xl">
+                <img src="https://placeholder.com/200" alt="dummy" class="w-full object-cover rounded-t-lg">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h1 class="text-lg font-semibold tracking-tight mb-2">Drs. Mohamad Hatta</h1>
+                    <p class="text-sm text-center tracking-tight">Lorem ipsum dolor</p>
+                    <p class="text-sm text-center tracking-tight mb-4">0012391392103910310</p>
+                    <ul class="flex flex-row justify-center gap-2">
+                        <li><a href="#">🔷</a></li>
+                        <li><a href="#">🔶</a></li>
+                        <li><a href="#">🔻</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col w-72 items-center rounded-2xl shadow-xl">
+                <img src="https://placeholder.com/200" alt="dummy" class="w-full object-cover rounded-t-lg">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h1 class="text-lg font-semibold tracking-tight mb-2">Drs. Mohamad Hatta</h1>
+                    <p class="text-sm text-center tracking-tight">Lorem ipsum dolor</p>
+                    <p class="text-sm text-center tracking-tight mb-4">0012391392103910310</p>
+                    <ul class="flex flex-row justify-center gap-2">
+                        <li><a href="#">🔷</a></li>
+                        <li><a href="#">🔶</a></li>
+                        <li><a href="#">🔻</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col w-72 items-center rounded-2xl shadow-xl">
+                <img src="https://placeholder.com/200" alt="dummy" class="w-full object-cover rounded-t-lg">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h1 class="text-lg font-semibold tracking-tight mb-2">Drs. Mohamad Hatta</h1>
+                    <p class="text-sm text-center tracking-tight">Lorem ipsum dolor</p>
+                    <p class="text-sm text-center tracking-tight mb-4">0012391392103910310</p>
+                    <ul class="flex flex-row justify-center gap-2">
+                        <li><a href="#">🔷</a></li>
+                        <li><a href="#">🔶</a></li>
+                        <li><a href="#">🔻</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col w-72 items-center rounded-2xl shadow-xl">
+                <img src="https://placeholder.com/200" alt="dummy" class="w-full object-cover rounded-t-lg">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h1 class="text-lg font-semibold tracking-tight mb-2">Drs. Mohamad Hatta</h1>
+                    <p class="text-sm text-center tracking-tight">Lorem ipsum dolor</p>
+                    <p class="text-sm text-center tracking-tight mb-4">0012391392103910310</p>
+                    <ul class="flex flex-row justify-center gap-2">
+                        <li><a href="#">🔷</a></li>
+                        <li><a href="#">🔶</a></li>
+                        <li><a href="#">🔻</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bg-sky-700 h-4"></div>
+        </div>
+
+    </section>
+
+    <!-- FaQ -->
+   <section id="faqs" class="py-10 pb-32">
+    <span>
+        <h1 class="text-2xl font-bold mb-6  text-slate-900 text-center xl:text-4xl">Frequently asked Questions</h1>
+    </span>
+       <div class="faq container mx-auto mb-4 border-b-2 border-slate-900">
+           <div class="question flex justify-between py-2">
+               <h2 class="text-lg tracking-tight font-bold text-slate-900 md:text-2xl">Apakah progrm ini gratis?</h2>
+               <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+           </div>
+           <div class="answer overflow-hidden max-h-0 active:max-h-max">
+               <p class="text-sm md:text-lg text-slate-900 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut repellendus amet dolorem dolores atque explicabo consectetur consequuntur mollitia, deleniti unde.1</p>
+           </div>
+       </div>
+       <div class="faq container mx-auto mb-4 border-b-2 border-slate-900">
+           <div class="question flex justify-between py-2">
+               <h2 class="text-lg tracking-tight font-bold text-slate-900 md:text-2xl">Bolehkah curhat masalah percintaan?</h2>
+               <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+           </div>
+           <div class="answer overflow-hidden max-h-0 active:max-h-max">
+               <p class="text-sm md:text-lg text-slate-900 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut repellendus amet dolorem dolores atque explicabo consectetur consequuntur mollitia, deleniti unde.1</p>
+           </div>
+       </div>
+       <div class="faq container mx-auto mb-4 border-b-2 border-slate-900">
+           <div class="question flex justify-between py-2">
+               <h2 class="text-lg tracking-tight font-bold text-slate-900 md:text-2xl">Curhat masalah financial keluarga?</h2>
+               <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+           </div>
+           <div class="answer overflow-hidden max-h-0 active:max-h-max">
+               <p class="text-sm md:text-lg text-slate-900 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut repellendus amet dolorem dolores atque explicabo consectetur consequuntur mollitia, deleniti unde.1</p>
+           </div>
+       </div>
+       <div class="faq container mx-auto mb-4 border-b-2 border-slate-900">
+           <div class="question flex justify-between py-2">
+               <h2 class="text-lg tracking-tight font-bold text-slate-900 md:text-2xl">Apakah programnya dilakukkan secara private?</h2>
+               <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+           </div>
+           <div class="answer overflow-hidden max-h-0 active:max-h-max">
+               <p class="text-sm md:text-lg text-slate-900 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut repellendus amet dolorem dolores atque explicabo consectetur consequuntur mollitia, deleniti unde.1</p>
+           </div>
+       </div>
+       
+   </section>
+
+    <!-- popup -->
+    <section id="popup">
+        <div class="fixed bottom-4 right-4 z-[999] mb-4">
+            <div class="bg-[#003a0b] fa-beat text-6xl h-full rounded-full">
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp fa-sm p-2 rounded-full m-2 text-center h-auto text-white "></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-400 sm:text-center ">© 2023 <a href="#" class="hover:underline">BkWEb™ | Fajar Ramadhan</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center justify-between gap-4 mt-3 text-sm font-medium text-gray-400 sm:mt-0">
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </footer>
+
+
+
+
+<script>
+    // show navbar
+    document.addEventListener("DOMContentLoaded", () => {
+        const navbarButton = document.getElementById("navbar-sticky");
+        const navbarList = document.getElementById("nav-list");
+
+        navbarButton.addEventListener("click", () => {
+            navbarList.classList.toggle("hidden");
+        });
+    });
+</script>
+<script>
+    const faq = document.querySelectorAll('.faq');
+
+    faq.forEach(faq => {
+        const question = faq.querySelector('.question');
+        const answer = faq.querySelector('.answer');
+
+        question.addEventListener("click", () => {
+            faq.classList.toggle("active");
+            if (faq.classList.contains("active")) {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            } else {
+                answer.style.maxHeight = null;
+            }
+        });
+    })
+</script>
+
 </body>
 </html>
