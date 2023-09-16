@@ -3,8 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const navbarButton = document.getElementById("navbar-sticky");
     const navbarList = document.getElementById("nav-list");
 
-    navbarButton.addEventListener("click", () => {
-        navbarList.classList.toggle("hidden");
+    navbarButton.addEventListener("click", (e) => {
+    navbarList.classList.toggle("hidden");
+    e.preventDefault();
     });
 });
 
